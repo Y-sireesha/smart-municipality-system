@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Municipality Complaint System</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>🏙️ Smart Municipality Complaint System</h1>
+
+    <form method="POST">
+        <textarea name="complaint" placeholder="Enter your complaint..." required></textarea>
+        <button type="submit">Analyze Complaint</button>
+    </form>
+
+    {% if result %}
+    <div class="result">
+        <h2>🔧 Predicted Service</h2>
+        <p class="service">{{ result }}</p>
+
+        <h2>📌 Extracted Entities</h2>
+        <ul>
+            {% for key, values in entities.items() %}
+                <li><strong>{{ key }}:</strong> {{ values | join(", ") }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% endif %}
+</div>
+
+</body>
+</html>
