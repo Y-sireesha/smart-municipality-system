@@ -59,7 +59,7 @@ This project provides a digital platform for reporting, tracking, and managing c
 
 ## Database
 
-- (Update this section if your project uses a database.)
+MongoDB
 
 ---
 
@@ -113,32 +113,13 @@ python app.py
 
 ---
 
-# 📸 Screenshots
+# 📸 Project Screenshots
 
-## Home Page
+<p align="center">
 
-*(Add screenshot here after uploading it.)*
+<img src="screenshots/project-overview.png" width="1000"/>
 
-```
-screenshots/home.png
-```
-
----
-
-## Dashboard
-
-```
-screenshots/dashboard.png
-```
-
----
-
-## Complaint Registration
-
-```
-screenshots/complaint.png
-```
-
+</p>
 ---
 
 # 👩‍💻 Author
